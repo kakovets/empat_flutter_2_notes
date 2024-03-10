@@ -42,12 +42,13 @@ class NoteCard extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(6),
-              child: Text(
-                note.text,
-                maxLines: 7,
-                overflow: TextOverflow.ellipsis,
+            Flexible(
+              child: Padding(
+                padding: const EdgeInsets.all(6),
+                child: Text(
+                  note.text,
+                  overflow: TextOverflow.clip,
+                ),
               ),
             ),
           ],
